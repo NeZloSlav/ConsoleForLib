@@ -4,8 +4,6 @@ namespace UnitTestMathLibrary
     public class UnitTest1
     {
         #region Algebra
-
-
         [TestMethod]
         public void GetSquareRootsTest1()
         {
@@ -455,9 +453,6 @@ namespace UnitTestMathLibrary
 
             Assert.AreEqual(result, methodRes);
         }
-
-
-
         #endregion
 
         #region Geometry
