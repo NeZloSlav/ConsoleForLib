@@ -10,7 +10,7 @@ namespace MathLibrary
     {
         public static double GetTriangleSquare(double side, double height)
         {
-            return (side * height) / 2;
+            return Math.Round(side * height / 2, 2);
         }
 
 
@@ -18,7 +18,7 @@ namespace MathLibrary
         {
             double halfPerimetr = (side1 + side2 + side3) / 2;
 
-            return Math.Sqrt(halfPerimetr * (halfPerimetr - side1) * (halfPerimetr - side2) * (halfPerimetr * side3));
+            return Math.Round(Math.Sqrt(halfPerimetr * (halfPerimetr - side1) * (halfPerimetr - side2) * (halfPerimetr - side3)), 2);
         }
 
         public static double GetRectangleSquare(double a, double b)
@@ -28,12 +28,12 @@ namespace MathLibrary
 
         public static double GetCircleSquare(double radius)
         {
-            return Math.PI * Math.Pow(radius, 2);
+            return Math.Round(Math.PI * Math.Pow(radius, 2), 2);
         }
 
         public static double GetTrapezoidSquare(double base1, double base2, double height)
         {
-            return (base1 + base2) / 2 * height;
+            return Math.Round((base1 + base2) / 2 * height, 2);
         }
 
 

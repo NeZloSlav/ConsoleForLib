@@ -445,7 +445,7 @@ namespace UnitTestMathLibrary
 
             double[] array = {1.23, 2.34, 45, 54.8 };
 
-            double result = 25.8425;
+            double result = 25.84;
 
             //Act
 
@@ -482,7 +482,7 @@ namespace UnitTestMathLibrary
             //Arrange
             double side = 2.3;
             double height = 4.4;
-            double square = 4.84;
+            double square = 5.06;
 
             //Act
             double result = MathLibrary.Geometry.GetTriangleSquare(side, height);
@@ -559,7 +559,7 @@ namespace UnitTestMathLibrary
             double side1 = 5;
             double side2 = 2;
             double side3 = 6;
-            double square = 4.684;
+            double square = 4.68;
 
             //Act
             double result = MathLibrary.Geometry.GetTriangleSquare(side1, side2, side3);
@@ -575,7 +575,7 @@ namespace UnitTestMathLibrary
             double side1 = 3;
             double side2 = 6;
             double side3 = 5;
-            double square = 7.483;
+            double square = 7.48;
 
             //Act
             double result = MathLibrary.Geometry.GetTriangleSquare(side1, side2, side3);
@@ -607,7 +607,7 @@ namespace UnitTestMathLibrary
             double side1 = 3.5;
             double side2 = 4;
             double side3 = 4;
-            double square = 6.295;
+            double square = 6.29;
 
             //Act
             double result = MathLibrary.Geometry.GetTriangleSquare(side1, side2, side3);
@@ -625,7 +625,7 @@ namespace UnitTestMathLibrary
             double square = 8;
 
             //Act
-            double result = MathLibrary.Geometry.GetTriangleSquare(a, b);
+            double result = MathLibrary.Geometry.GetRectangleSquare(a, b);
 
             //Assert
             Assert.AreEqual(square, result);
@@ -640,7 +640,7 @@ namespace UnitTestMathLibrary
             double square = 4.23;
 
             //Act
-            double result = MathLibrary.Geometry.GetTriangleSquare(a, b);
+            double result = MathLibrary.Geometry.GetRectangleSquare(a, b);
 
             //Assert
             Assert.AreEqual(square, result);
@@ -655,7 +655,7 @@ namespace UnitTestMathLibrary
             double square = 30;
 
             //Act
-            double result = MathLibrary.Geometry.GetTriangleSquare(a, b);
+            double result = MathLibrary.Geometry.GetRectangleSquare(a, b);
 
             //Assert
             Assert.AreEqual(square, result);
@@ -670,7 +670,7 @@ namespace UnitTestMathLibrary
             double square = 99;
 
             //Act
-            double result = MathLibrary.Geometry.GetTriangleSquare(a, b);
+            double result = MathLibrary.Geometry.GetRectangleSquare(a, b);
 
             //Assert
             Assert.AreEqual(square, result);
@@ -685,7 +685,7 @@ namespace UnitTestMathLibrary
             double square = 32;
 
             //Act
-            double result = MathLibrary.Geometry.GetTriangleSquare(a, b);
+            double result = MathLibrary.Geometry.GetRectangleSquare(a, b);
 
             //Assert
             Assert.AreEqual(square, result);
@@ -696,7 +696,7 @@ namespace UnitTestMathLibrary
         {
             //Arrange
             double radius = 5;
-            double square = 78.5;
+            double square = 78.54;
 
             //Act
             double result = MathLibrary.Geometry.GetCircleSquare(radius);
@@ -710,7 +710,7 @@ namespace UnitTestMathLibrary
         {
             //Arrange
             double radius = 2;
-            double square = 12.56;
+            double square = 12.57;
 
             //Act
             double result = MathLibrary.Geometry.GetCircleSquare(radius);
@@ -724,7 +724,7 @@ namespace UnitTestMathLibrary
         {
             //Arrange
             double radius = 9;
-            double square = 254.34;
+            double square = 254.47;
 
             //Act
             double result = MathLibrary.Geometry.GetCircleSquare(radius);
@@ -738,7 +738,7 @@ namespace UnitTestMathLibrary
         {
             //Arrange
             double radius = 8.5;
-            double square = 226.865;
+            double square = 226.98;
 
             //Act
             double result = MathLibrary.Geometry.GetCircleSquare(radius);
@@ -752,7 +752,7 @@ namespace UnitTestMathLibrary
         {
             //Arrange
             double radius = 1.4;
-            double square = 6.1544;
+            double square = 6.16;
 
             //Act
             double result = MathLibrary.Geometry.GetCircleSquare(radius);
@@ -841,6 +841,11 @@ namespace UnitTestMathLibrary
             Assert.AreEqual(square, result);
         }
 
+
+
+        #endregion
+
+        #region Trigonometry
         [TestMethod]
         public void GetSinTest1()
         {
@@ -862,7 +867,7 @@ namespace UnitTestMathLibrary
             //Arrange
             double cathet = 3;
             double hypotenuse = 6;
-            double sin = 1.5;
+            double sin = 0.5;
 
             //Act
             double result = MathLibrary.Trigonometry.GetSin(cathet, hypotenuse);
@@ -937,7 +942,7 @@ namespace UnitTestMathLibrary
             //Arrange
             double cathet = 3;
             double hypotenuse = 6;
-            double sin = 1.5;
+            double sin = 0.5;
 
             //Act
             double result = MathLibrary.Trigonometry.GetCos(cathet, hypotenuse);
@@ -1170,11 +1175,6 @@ namespace UnitTestMathLibrary
 
             Assert.AreEqual(tang, methodRes);
         }
-
-        #endregion
-
-        #region Trigonometry
-
         #endregion
     }
 }
